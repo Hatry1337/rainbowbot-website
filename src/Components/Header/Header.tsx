@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import './Header.css';
-import './App.css';
-import logo from './assets/logo512.png'
+import '../../App.css';
+import logo from '../../assets/logo512.png'
 import { Container, Nav, Navbar } from 'react-bootstrap';
 
 interface HeaderProps{
