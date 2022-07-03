@@ -1,0 +1,31 @@
+$theme-colors: (
+    "primary": #623FFF,
+    "secondary": #A18CFF,
+    "success": #01FF57,
+    "danger": #FF4349,
+    "warning": #FFAA00,
+    "info": #7AEBB9,
+    "light": #f8f9fa,
+    "dark": #212529
+);
+
+.btn{
+    border-radius: 2rem !important;
+}
+
+$btn-focus-box-shadow: none !important;
+
+.btn-secondary, .btn-danger, .btn-warning, 
+.btn-outline-secondary:active, .btn-outline-danger:active, .btn-outline-warning:active,
+.btn-outline-secondary:hover, .btn-outline-danger:hover, .btn-outline-warning:hover {
+    color: white !important;
+}
+
+.btn-success, .btn-light, .btn-info, 
+.btn-outline-success:active, .btn-outline-light:active, .btn-outline-info:active, 
+.btn-outline-success:hover, .btn-outline-light:hover, .btn-outline-info:hover {
+    color: map-get($map: $theme-colors, $key: dark) !important;
+}
+
+
+@import '~bootstrap/scss/bootstrap.scss';

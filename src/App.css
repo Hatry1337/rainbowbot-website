@@ -1,38 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+body {
+	height: 300%;
+	scroll-behavior: smooth;
+}
+
 .App {
-  text-align: center;
+	text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.big-logo{
+	height: 14rem;
+	padding: 1rem;
+	margin: 1rem;
+	vertical-align: middle;
+	display: inline;
+	-webkit-filter: drop-shadow(0 0 60px white);
+  	filter: drop-shadow(0 0 60px white);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.big-text{
+	font-family: 'Alfa Slab One';
+	font-weight: 100;
+	color: white;
+	display: inline;
+	font-size: 3rem;
 }
