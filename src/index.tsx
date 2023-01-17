@@ -1,13 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './custom.scss';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import Root from "./Pages/Root/Root";
+import Tos from "./Pages/Tos/Tos";
+import Privacy from "./Pages/Privacy/Privacy";
+
+const router = createBrowserRouter([
+	{
+		path: "/",
+		element: <Root/>,
+	},
+	{
+		path: "/tos",
+		element: <Tos/>,
+	},
+	{
+		path: "/privacy",
+		element: <Privacy/>,
+	},
+]);
 
 ReactDOM.render(
 	<React.StrictMode>
-		<App />
+		<RouterProvider router={router} />
 	</React.StrictMode>,
 	document.getElementById('root')
 );
